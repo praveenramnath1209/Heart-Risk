@@ -24,6 +24,6 @@ if st.button('Predict'):
   pred = model.predict(data)
   if pred[0] == 0:
     st.success('Low Risk')
-    st.toast()
+    st.balloons()
   else:
     st.error('High Risk')
