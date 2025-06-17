@@ -16,8 +16,8 @@ with open('model.pkl', 'rb') as f:
 
 st.title('Heart Risk Prediction')
 
-BP = st.number_input('Enter Blood Pressure',format='%d')
-CH = st.number_input('Enter Cholesterol',format='%d')
+BP = st.number_input('Enter Blood Pressure',format='%.2f')
+CH = st.number_input('Enter Cholesterol',format='%.2f')
 
 if st.button('Predict'):
   data = np.array([[BP,CH]])
